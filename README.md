@@ -31,22 +31,22 @@ In this section, I will list and briefly describe data analytics projects that I
 
 **Report:** 
 
-**Description:** 
+**Description:** The project focuses on the global overfishing problem and how data can be used to help. 3 different datasets were used, providing helpful information on fishing statistics by country such as aquaculture and capture fishery production, fish consumption, sustainable fish stocks, country populations across time, and general country information. The datasets were merged together to better answer how certain economical, socail, and geographical factors can predict a country's impact on overfishing and how the United States specifically compares to similar countries around the world.
 
-**Skills:** 
+**Skills:** data cleaning, data exploration, data analysis, database merging, data visualization
 
-**Technology:** 
+**Technology:** Python, pandas, matplotlib, regex
 
 ### FIFA Wonderkids Project
 **Code:** 
 
 **Report:** 
 
-**Description:** 
+**Description:** This project uses data from the FIFA 2022 video game to predict which soccer players make for the best acquisitions in the game's career mode. Initially, a simple linear model was created to predicted a player's potential overall given other parameters such as player overall, age, transfer value, and league. However, the model was then adjusted to pass the required statistical assumptions of constant variance and better predict potential overall. 
 
-**Skills:** 
+**Skills:** data cleaning, data exploration, data analysis, data visualization, linear regression
 
-**Technology:** 
+**Technology:** R, ggplot
 
 ### Ann Arbor Water Project
 **Code:** 
@@ -81,44 +81,44 @@ In this section, I will list and briefly describe data analytics projects that I
 
 **Report:** 
 
-**Description:** 
+**Description:** As the at-the-time Education Officer, my most significant responsibility was creating a tutorial process that would onboard all new Wolverine Sports Analytics club members to the technology stack that we most commonly use. These tutorials follow through an example project that is similar to what many of the club members are expected to produce themselves. The tutorials cover a large variety of data analytics topics, starting with an elementary overview of Python Basics and progressing to cover web scraping with BeautifulSoup, data management with SQL, data manipulation with Pandas, data visualization with Matplotlib, regression with Scikit-Learn, and machine learning with Tensorflow.
 
-**Skills:** 
+**Skills:** data analytics, web scraping, data management, data cleaning, data manipulation, data merging, data visualization, linear regression, machine learning
 
-**Technology:** 
+**Technology:** Python, BeautifulSoup, SQL, Pandas, Matplotlib, Numpy, Scikit-Learn, Statsmodel API, Tensorflow, Seaborn
 
 ### Premier League Transfer Market Project
 **Code:** 
 
 **Report:** 
 
-**Description:** 
+**Description:** For this Wolverine Sports Analytics project, I was a Project Lead. Our goal was to take various English Premier League statistics from websites such as fbreference.com and use them to determine which Premier League transfers were the most effective for their cost. Additionally, the project explored overall team success based on the same statistics. We aggregated players by team to create a predicted Premier League table as well as determined which teams found the best value in the transfer market and which clubs relied the most on incoming players. By myself, I revamped the project a year after its initial completion to include the previous year's statistics and clean much of the data that was missing or misleading.
 
-**Skills:** 
+**Skills:** data cleaning, data exploration, data analysis, data visualization
 
-**Technology:** 
+**Technology:** Python, Pandas, Matplotlib, Scipy, BeautifulSoup, SQL
 
 ### USHL Talent Identifier Project
 **Code:** 
 
 **Report:** 
 
-**Description:** 
+**Description:** This project was completed during the Fall 2023 semester for the Wolverine Sports Analytics club. The project used USHL data provided by Michigan Men's Ice Hockey Director of Analysis Anthony Ciatti. Using the data, we created a model that compares USHL players to others of the same position to create a "score" in 4 different categories: prodiction, offense, defense, and transition. These scores were then aggregated to compute an overall score for each player. These scores were passed along to Ciatti who used them for scouting purposes.
 
-**Skills:** 
+**Skills:** data cleaning, data exploration, data analysis, data visualization, machine learning
 
-**Technology:** 
+**Technology:** Python, pandas, matplotlib, xgboost, seaborn, scikit-learn, SQL
 
 ### Baseball Stolen Base Analysis Project
 **Code:** 
 
 **Report:** 
 
-**Description:** 
+**Description:** This project was completed as an entry in the 2023 SMT Data Challenge. The project used databases containing information on baseball games including ball position, fielder position, and game occurances. My team analyzed stolen base decisions and whether or not it is more effective for a catcher to focus on pop time or throw speed in regards to throwing a runner out at second base. The project also explores leadoff distance for the runner and asks whether or not there is a sweet spot distance for the runner.
 
-**Skills:** 
+**Skills:** data cleaning, data exploration, data analysis, data visualization, machine learning
 
-**Technology:** 
+**Technology:** R, ggplot, Python, Pandas, Matplotlib
 
 ## Education
 Northville High School (Northville, MI), Sep 2017 - Apr 2021
@@ -131,11 +131,15 @@ University of Michigan (Ann Arbor, MI), Aug 2021 - May 2025
 
 ## Certificates
 [Foundations of Sports Analytics](https://coursera.org/share/181284a3768e4882955661b2f3ef8c1b) (June 2024) (Coursera)
+
 [Moneyball and Beyond](https://coursera.org/share/9f3008944bb4b8ba93000319d30ddfc6) (June 2024) (Coursera)
+
 [Prediction Models with Sports Data](https://coursera.org/share/4c8069d76cfc9f7208b4b73e93c75425) (June 2024) (Coursera)
+
 [Wearable Technologies and Sports Analytics](https://coursera.org/share/f4a4b224efb36b794cccb9c561bc8d47) (July 2024) (Coursera)
 
 ## Contact
 Email: zeisman001@gmail.com
+
 LinkedIn: [@zachary-eisman](https://www.linkedin.com/in/zachary-eisman/)
 
