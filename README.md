@@ -37,9 +37,11 @@ In this section, I will list and briefly describe data analytics projects that I
 **Technology:** Python, pandas, matplotlib, regex
 
 ### FIFA Wonderkids Project
-**Code:** 
+**Code:** [R Code](fifa-wonderkids-project/Appendices.Rmd)
 
-**Report:** 
+**Report:** [Stats 401 Final Project](fifa-wonderkids-project/Stats401FinalProjectPDF.pdf)
+
+**Report Appendices:** [Stats 401 Final Project Appendices](fifa-wonderkids-project/Appendices.pdf)
 
 **Description:** This project uses data from the FIFA 2022 video game to predict which soccer players make for the best acquisitions in the game's career mode. Initially, a simple linear model was created to predicted a player's potential overall given other parameters such as player overall, age, transfer value, and league. However, the model was then adjusted to pass the required statistical assumptions of constant variance and better predict potential overall. 
 
