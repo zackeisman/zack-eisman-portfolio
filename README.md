@@ -66,9 +66,9 @@ In this section, I will list and briefly describe data analytics projects that I
 **Technology:** Python, Pandas, Matplotlib, Seaborn
 
 ### Michigan Men's Soccer Team Project
-**Code:** 
+**Code:** [SI 311 Soccer Project Code](michigan-mens-soccer-project/SI_311_Soccer_Project_Poster_Visual_2.ipynb)
 
-**Report:** 
+**Report:** [SI 311 Soccer Projece Final Poster](michigan-mens-soccer-project/SI_311_Soccer_Project_Poster.pdf)
 
 **Description:** This project involved scouting opponents using data for the Michigan Men's Soccer Team and Assitant Coach Jhojan Obando. Prior to each match, I analyzed Wyscout scouting reports for each of Michigan's opponent's 4 most recent games. Using that data, I compiled shorter reports on each opponent's strengths, weaknesses, and general observations that were sent to the Michigan coaching staff for pre-match preperation. After the conclusion of each match, I would analyze the Wyscout report to determine if Michigan was able to successfully gain competitive advantages by nullifying strengths and attacking weaknesses. Additionally, feedback from the coaching staff was used to determine the success of my analysis.
 
