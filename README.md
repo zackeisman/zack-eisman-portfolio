@@ -115,7 +115,7 @@ In this section, I will list and briefly describe data analytics projects that I
 ### Baseball Stolen Base Analysis Project
 **Code:** [SMT Data Challenge Code](baseball-stolen-base-analysis-project/code)
 
-**Report:** [SMT Data Challenge Final Report](baseball-stolen-base-analysis-project/SMT-Data-Challenge-Final-Report.pdf)
+**Report:** [SMT Data Challenge Final Report](baseball-stolen-base-analysis-project/SMT-Data-Challenge-Report.pdf)
 
 **Description:** This project was completed as an entry in the 2023 SMT Data Challenge. The project used databases containing information on baseball games including ball position, fielder position, and game occurances. My team analyzed stolen base decisions and whether or not it is more effective for a catcher to focus on pop time or throw speed in regards to throwing a runner out at second base. The project also explores leadoff distance for the runner and asks whether or not there is a sweet spot distance for the runner.
 
