@@ -29,7 +29,7 @@ In this section, I will list and briefly describe data analytics projects that I
 ### Overfishing Crisis Project
 **Code:** 
 
-**Report:** 
+**Report:** [SI 330 Final Project](overfishing-crisis-project/SI 330 Final Project Phase 3.pdf)
 
 **Description:** The project focuses on the global overfishing problem and how data can be used to help. 3 different datasets were used, providing helpful information on fishing statistics by country such as aquaculture and capture fishery production, fish consumption, sustainable fish stocks, country populations across time, and general country information. The datasets were merged together to better answer how certain economical, socail, and geographical factors can predict a country's impact on overfishing and how the United States specifically compares to similar countries around the world.
 
