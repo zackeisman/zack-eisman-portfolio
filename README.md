@@ -89,9 +89,11 @@ In this section, I will list and briefly describe data analytics projects that I
 **Technology:** Python, BeautifulSoup, SQL, Pandas, Matplotlib, Numpy, Scikit-Learn, Statsmodel API, Tensorflow, Seaborn
 
 ### Premier League Transfer Market Project
-**Code:** 
+**Web Scraping Code:** [Premier League Scraping Code](premier-league-transfer-market-project/Soccer-Project-Revamp-Scraping.ipynb)
 
-**Report:** 
+**Analysis Code:** [Premier League Analysis Code](premier-league-transfer-market-project/Soccer-Project-Revamp.ipynb)
+
+**Report:** [Premier League Project Final Presentation](premier-league-transfer-market-project/WSA_Soccer_Project_Revamp_Final_Presentation.pdf)
 
 **Description:** For this Wolverine Sports Analytics project, I was a Project Lead. Our goal was to take various English Premier League statistics from websites such as fbreference.com and use them to determine which Premier League transfers were the most effective for their cost. Additionally, the project explored overall team success based on the same statistics. We aggregated players by team to create a predicted Premier League table as well as determined which teams found the best value in the transfer market and which clubs relied the most on incoming players. By myself, I revamped the project a year after its initial completion to include the previous year's statistics and clean much of the data that was missing or misleading.
 
