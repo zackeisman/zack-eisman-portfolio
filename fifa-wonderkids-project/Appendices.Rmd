@@ -1,0 +1,232 @@
+---
+title: "Appendices"
+author: "Zack Eisman"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    theme: lumen
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r include = FALSE}
+# Load any packages you may need here
+
+library(car)
+library(ggplot2)
+library(gridExtra)
+```
+
+
+```{r include = FALSE}
+# Read in your data set here (and perform any necessary cleaning/manipulation)
+
+fifa <- read.csv("fifa.csv")
+fifa <- subset(fifa, league_name == 'English Premier League' | league_name == 'Spain Primera Division' | league_name == 'Italian Serie A' | league_name == 'German 1. Bundesliga' | league_name == 'French Ligue 1')
+```
+
+***
+
+### Figure 1: Initial Model
+
+```{r}
+lm_initial <- lm(potential ~ overall + age + value_eur + league_name, data = fifa)
+summary(lm_initial)
+```
+
+```{r}
+plot(lm_initial, which = 1, id.n = 0, add.smooth = FALSE)
+```
+
+```{r}
+plot(lm_initial, which = 2, id.n = 0)
+```
+
+***
+
+### Figure 2: Histograms of All Variables
+
+```{r}
+p1 <- ggplot(data = fifa, aes(x = potential)) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of Potentials",
+       x = "Potential Overall",
+       y = "Frequency") + 
+  theme_bw()
+
+p2 <- ggplot(data = fifa, aes(x = overall)) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of Overalls",
+       x = "Player Overalls",
+       y = "Frequency") + 
+  theme_bw()
+
+p3 <- ggplot(data = fifa, aes(x = age)) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of Ages",
+       x = "Age (in years)",
+       y = "Frequency") + 
+  theme_bw()
+
+p4 <- ggplot(data = fifa, aes(x = log(age))) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of log(Ages)",
+       x = "log(Ages)",
+       y = "Frequency") + 
+  theme_bw()
+
+p5 <- ggplot(data = fifa, aes(x = value_eur)) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of Transfer Values",
+       x = "Transfer Value (in euros)",
+       y = "Frequency") + 
+  theme_bw()
+
+p6 <- ggplot(data = fifa, aes(x = log(value_eur))) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of log(Transfer Value)",
+       x = "log(Transfer Value)",
+       y = "Frequency") + 
+  theme_bw()
+
+grid.arrange(p1, p2, p3, p4, p5, p6, nrow = 3, ncol = 2)
+```
+
+***
+
+### Figure 3: Improved Residuals vs Fitted Graph
+
+```{r}
+lm_logs <- lm(potential ~ overall + log(age) + log(value_eur) + league_name, data = fifa)
+plot(lm_logs, which = 1, id.n = 0, add.smooth = FALSE)
+```
+
+***
+
+### Figure 4: Scatterplot Matrix of Data
+
+```{r}
+plot(~ potential + overall + log(age) + log(value_eur), data = fifa)
+```
+
+***
+
+### Figure 5: Improved Model
+
+```{r}
+lm_improved <- lm(potential ~ overall + log(age) + log(value_eur) + league_name, data = fifa)
+summary(lm_improved)
+```
+
+***
+
+### Figure 6: Interaction Plot
+
+```{r}
+ggplot(data = fifa, aes(x = overall, y = potential, col = league_name, shape = league_name)) + 
+  
+  geom_point() +
+  
+  geom_smooth(method = "lm", formula = y ~ x, se = FALSE) +
+  
+  labs(title = "Player Potential vs Overall by League",
+       x = "Player Overall",
+       y = "Potential Overall") +
+  
+  theme_bw()
+```
+
+***
+
+### Figure 7: Interaction Model
+
+```{r}
+lm_interaction <- lm(potential ~ overall + log(age) + log(value_eur) + league_name + league_name * overall, data = fifa)
+summary(lm_interaction)
+```
+
+***
+
+### Figure 8: Removing Transfer Value Model
+
+```{r}
+lm_swap <- lm(potential ~ overall + log(age) + log(wage_eur) + league_name + league_name * overall, data = fifa)
+summary(lm_swap)
+```
+
+```{r}
+p7 <- ggplot(data = fifa, aes(x = wage_eur)) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of Player Wages",
+       x = "Wage (in euros)",
+       y = "Frequency") + 
+  theme_bw()
+
+p8 <- ggplot(data = fifa, aes(x = log(wage_eur))) + 
+  geom_histogram(bins = 8, color = "black", fill = "grey80") + 
+  labs(title = "Histogram of log(Wage)",
+       x = "log(Wage)",
+       y = "Frequency") + 
+  theme_bw()
+
+grid.arrange(p7, p8, nrow = 1, ncol = 2)
+```
+
+```{r}
+plot(lm_swap, which = 1, id.n = 0, add.smooth = FALSE)
+```
+
+***
+
+### Figure 9: Final Model
+
+```{r}
+lm_final <- lm(potential ~ overall + log(age) + log(wage_eur) + league_name + league_name * overall, data = fifa)
+summary(lm_final)
+```
+
+```{r}
+plot(lm_final, which = 1, id.n = 0, add.smooth = FALSE)
+```
+
+```{r}
+plot(lm_final, which = 2, id.n = 0)
+```
+
+```{r}
+vif(lm(potential ~ overall + log(age) + log(wage_eur), data = fifa))
+```
+
+
+***
+
+### Figure 10: CMF (Final Model)
+
+$E(Y_{potential}|X) = \beta_0 + \beta_1 X_{overall} + \beta_2 log(X_{age}) + \beta_3 log(X_{wage}) +  \beta_4 I_{Ligue 1} + \beta_5 I_{Bundesliga}  + \beta_6 I_{SerieA}  + \beta_7 I_{La Liga} + \beta_8 X_{overall}I_{Ligue 1} + \beta_9 X_{overall}I_{Bundesliga} + \beta_{10}  X_{overall}I_{SerieA} + \beta_{11} X_{overall}I_{LaLiga}$
+
+
+
+```{r include = FALSE}
+# IMPORTANT NOTES
+
+# The plots above are examples! 
+# You will have more plots and output than what is shown above
+# Please see the submission guidelines file for more information
+
+# Be sure your "setup" code chunk at the top is set to `echo = FALSE`
+# Including *** between figures adds in some space to your knitted file
+# Be sure to leave a blank line of code before and after the line with ***
+```
+
+
+
+
+
+
+
