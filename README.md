@@ -51,7 +51,7 @@ In this section, I will list and briefly describe data analytics projects that I
 
 ### Ann Arbor Water Project
 
-**Report:** [SI 305 Final Project Report](ann-arbor-water-project/SI.305.Final.Project.Report.pdf)
+**Report:** [SI 305 Final Project Report](ann-arbor-water-project/SI_305_Final_Project_Report.pdf)
 
 **Description:** This project analyzes 3 datasets on Ann Arbor, Michigan rainfall, Atlas-14 rainfall estimates, and Ann Arbor water main break history. The project involved reading in each database, clearning and preprocessing each, combining the data on similar columns, and performing exploratory data analysis to answer the following 3 research questions: 
 
