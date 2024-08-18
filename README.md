@@ -102,9 +102,9 @@ In this section, I will list and briefly describe data analytics projects that I
 **Technology:** Python, Pandas, Matplotlib, Scipy, BeautifulSoup, SQL
 
 ### USHL Talent Identifier Project
-**Code:** [Hockey Project Code](ushl-talen-identifier-project/overallScore.py)
+**Code:** [Hockey Project Code](ushl-talent-identifier-project/overallScore.py)
 
-**Report:** [Hockey Project Final Presentation](ushl-talen-identifier-project/Hockey-Presentation-Final-Slides.pdf)
+**Report:** [Hockey Project Final Presentation](ushl-talent-identifier-project/Hockey-Presentation-Final-Slides.pdf)
 
 **Description:** This project was completed during the Fall 2023 semester for the Wolverine Sports Analytics club. The project used USHL data provided by Michigan Men's Ice Hockey Director of Analysis Anthony Ciatti. Using the data, we created a model that compares USHL players to others of the same position to create a "score" in 4 different categories: prodiction, offense, defense, and transition. These scores were then aggregated to compute an overall score for each player. These scores were passed along to Ciatti who used them for scouting purposes.
 
