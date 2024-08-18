@@ -80,9 +80,7 @@ In this section, I will list and briefly describe data analytics projects that I
 In this section, I will list and briefly describe data analytics projects that I have completed in my personal time related to clubs and personal interests.
 
 ### Wolverine Sports Analytics Tutorials
-**Code:** 
-
-**Report:** 
+**Code:** [Folder with All WSA Tutorials](wolverine-sports-analytics-tutorials)
 
 **Description:** As the at-the-time Education Officer, my most significant responsibility was creating a tutorial process that would onboard all new Wolverine Sports Analytics club members to the technology stack that we most commonly use. These tutorials follow through an example project that is similar to what many of the club members are expected to produce themselves. The tutorials cover a large variety of data analytics topics, starting with an elementary overview of Python Basics and progressing to cover web scraping with BeautifulSoup, data management with SQL, data manipulation with Pandas, data visualization with Matplotlib, regression with Scikit-Learn, and machine learning with Tensorflow.
 
