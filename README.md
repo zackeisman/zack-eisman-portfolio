@@ -3,7 +3,8 @@
 ## About
 Hello! My name is Zack Eisman and I am data analyst looking to learn about and solve meaningful real-world problems. I am currently a senior studying Information Analysis at the Unviersity of Michigan School of Information. My degree is helping me develop hard skills such as programming and data analysis as well as soft skills such as teamwork and communication. I am passionate about business, where I am also pursuing a minor, and I want to use data to improve the efficiency and effectiveness of business operations. In my free time, I enjoy exploring my passion for data analytics in sports, where I have experience working with the Michigan men's soccer team as well as creating interesting projects on a variety of sports such as soccer and ice hockey as the president of the Wolverine Sports Analytics club. I am eager to make relevant and interesting analysis on future projects while I am a student as well as after graduation.
 
-My resume in [pdf](https://github.com/user-attachments/files/16649465/Zack.Eisman.Resume.--.Aug.2024.pdf)
+My resume in [pdf](https://github.com/user-attachments/files/16830530/Zachary-Eisman-Resume.pdf)
+
 
 This is a repository to showcase the projects I have completed and skills I have learned as I continue my studies and begin my career in the data analytics and data science field.
 
@@ -17,7 +18,7 @@ This is a repository to showcase the projects I have completed and skills I have
 - Personal Projects
   - [Wolverine Sports Analytics Tutorials](#wolverine-sports-analytics-tutorials)
   - [Premier League Transfer Market Project](#premier-league-transfer-market-project)
-  - [USHL Talent Identifier Project](#ushl-talent-identifier-project)
+  - [NCAA Hockey Cards Project](#ncaa-hockey-cards-project)
   - [Baseball Stolen Base Analysis Project](#baseball-stolen-base-analysis-project)
 - [Education](#education)
 - [Certificates](#certificates)
@@ -101,10 +102,10 @@ In this section, I will list and briefly describe data analytics projects that I
 
 **Technology:** Python, Pandas, Matplotlib, Scipy, BeautifulSoup, SQL
 
-### USHL Talent Identifier Project
-**Code:** [Hockey Project Code](ushl-talent-identifier-project/overallScore.py)
+### NCAA Hockey Cards Project
+**Code:** [Hockey Project Code](ncaa-hockey-cards-project/overallScore.py)
 
-**Report:** [Hockey Project Final Presentation](ushl-talent-identifier-project/Hockey-Presentation-Final-Slides.pdf)
+**Report:** [Hockey Project Final Presentation](ncaa-hockey-cards-project/Hockey-Presentation-Final-Slides.pdf)
 
 **Description:** This project was completed during the Fall 2023 semester for the Wolverine Sports Analytics club. The project used USHL data provided by Michigan Men's Ice Hockey Director of Analysis Anthony Ciatti. Using the data, we created a model that compares USHL players to others of the same position to create a "score" in 4 different categories: prodiction, offense, defense, and transition. These scores were then aggregated to compute an overall score for each player. These scores were passed along to Ciatti who used them for scouting purposes.
 
